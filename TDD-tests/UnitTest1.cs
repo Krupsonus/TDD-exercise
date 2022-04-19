@@ -21,5 +21,23 @@ namespace TDD_tests
             int min = parser.min(2, 4);
             Assert.AreEqual(2, min);
         }
+
+        [TestMethod]
+        public void Return_True_Value_For_Positive_Number()
+        {
+            Parser parser = new Parser();
+            bool isPositive = parser.isPositive(5);
+            Assert.AreEqual(true, isPositive);
+        }
+
+        [TestMethod]
+        public void Return_False_Value_For_Negative_Number()
+        {
+            Parser parser = new Parser();
+            bool isPositive = parser.isPositive(-5);
+            Assert.AreEqual(false, isPositive);
+        }
+
+
     }
 }
