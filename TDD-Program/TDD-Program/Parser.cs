@@ -14,8 +14,8 @@
 
         public bool isPositive(int a)
         {
-            if (a >= 0) { return true; }
-            else { return false; }
+            if (a < 0) { return false; }
+            return true;
         }
     }
 }
