@@ -11,5 +11,11 @@
         {
             return Math.Min(a, b);
         }
+
+        public bool isPositive(int a)
+        {
+            if (a >= 0) { return true; }
+            else { return false; }
+        }
     }
 }
