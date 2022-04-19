@@ -6,8 +6,11 @@ namespace TDD_tests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Return_Correct_Max_Value_From_2_Args()
         {
+            Parser parser = new Parser();
+            int max = parser.max(2, 4);
+            Assert.AreEqual(4, max);
         }
     }
 }
